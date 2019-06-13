@@ -1,5 +1,3 @@
-
-
 ## 1. Vue
 Vue es un Framework progresivo para crear interfaces de usuario. 
 A diferencia de otros Frameworks monolíticos, Vue está diseñado desde cero para ser adoptable de forma incremental. 
@@ -27,9 +25,39 @@ Vue CLI es un sistema completo para el rápido desarrollo de Vue.js
 link: https://cli.vuejs.org/guide/
 
 #### VUE-CLI Instalacion
-`npm install -g @vue/cli`  
+```
+npm install -g @vue/cli
+```
 
 #### VUE-CLI Crear proyecto
 
-`vue create nombre-del-proyecto`
+```
+vue create nombre-del-proyecto
+```
 
+
+
+## Setup de Proyecto
+```
+npm install
+```
+
+#### Compilar y hot-reloads para desarrollo
+```
+npm run serve
+```
+
+#### compilar y minificar para produccion
+```
+npm run build
+```
+
+#### Run your tests
+```
+npm run test
+```
+
+#### Lints and fixes files
+```
+npm run lint
+```
