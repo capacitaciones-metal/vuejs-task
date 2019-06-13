@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <task-container />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import TaskContainer from './components/TaskContainer'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    TaskContainer
   }
 }
 </script>
