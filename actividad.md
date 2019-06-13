@@ -20,12 +20,11 @@ Se utilizara el siguiente esquema de componentes:
 - Agregar un boton con el label "agregar"
 - Agregar un state denomiando "task", inicializar con String vacio
 - Vincular el state "tastk" con el input field mediante v-model
-- Agregar una validacion al apretar el boton "agregar" que corrobore que task no esta vacio
 - Al apretar el boton "agregar" emitir un evento denominado "newTask" y enviar como parametro el valor del state "task"
+- Agregar una validacion al apretar el boton "agregar" que corrobore que task no esta vacio
+- Importar y agregar el componente "taskNew" al componente "TaskContainer"
 
 ### 3. Recepción de evento
-
-- Importar y agregar el componente "taskNew" al componente "TaskContainer"
 - Agregar un state denominado "tasks" e inicializar como array vacio
 - Recibir evento "newTask" agregando el parametro recibido "task" como un item del state "tasks"
 - Verificar los states con  Devtools
