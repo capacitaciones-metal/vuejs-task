@@ -46,9 +46,9 @@ Se utilizara el siguiente esquema de componentes:
 - Imprimir el valor de "task" dentro del tag "<li>"
 
 ### 6. Mostrar lista de items 
+- Importar y agregar el componente "TaskListItem" poniendolo dentro del for inyectando la prop "id" y "task"
 - Agregar la etiqueta <ul> dentro de "TaskList"
 - Agregar un v-for en la etiqueta <ul> e iterar la prop "tasks"
-- Importar y agregar el componente "TaskListItem" poniendolo dentro del for inyectando la prop "id" y "task"
 
 
 ### 7. Eliminar tarea

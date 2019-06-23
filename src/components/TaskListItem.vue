@@ -5,7 +5,7 @@
 <script>
     export default {
         name: "TaskListItem",
-        prop: {
+        props: {
             task: String,
             id: Number
         }
