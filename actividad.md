@@ -42,7 +42,7 @@ Se utilizara el siguiente esquema de componentes:
 
 - Crear un componente llamado "TaskListItem" en el path "src/componentes"
 - Agregar una prop "task" del tipo String
-- Agregar una prop "id" del tipo Integer
+- Agregar una prop "id" del tipo Number
 - Imprimir el valor de "task" dentro del tag "<li>"
 
 ### 6. Mostrar lista de items 
