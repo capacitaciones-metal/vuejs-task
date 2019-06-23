@@ -2,7 +2,7 @@
     <div>
         <h3>Gestion de Tareas</h3>
         <task-new v-on:newTask="addTask"/>
-        <task-list/>
+        <task-list :tasks="tasks"/>
     </div>
 </template>
 

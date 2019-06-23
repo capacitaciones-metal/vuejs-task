@@ -17,6 +17,7 @@
             add: function () {
                 if (this.task) {
                     this.$emit("newTask", this.task)
+                    this.task = ""
                 } else {
                     console.log("Task esta vacio")
                 }

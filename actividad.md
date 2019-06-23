@@ -19,8 +19,9 @@ Se utilizara el siguiente esquema de componentes:
 - Agregar un input field con el label "nueva tarea"
 - Agregar un boton con el label "agregar"
 - Agregar un state denomiando "task", inicializar con String vacio
-- Vincular el state "tastk" con el input field mediante v-model
+- Vincular el state "task" con el input field mediante v-model
 - Al apretar el boton "agregar" emitir un evento denominado "newTask" y enviar como parametro el valor del state "task"
+- Al apretar el boton "agregar" luego de emitir el evento blanquear el contenido del input
 - Agregar una validacion al apretar el boton "agregar" que corrobore que task no esta vacio
 - Importar y agregar el componente "TaskNew" al componente "TaskContainer"
 
@@ -35,6 +36,7 @@ Se utilizara el siguiente esquema de componentes:
 - Agregar una prop denominada "tasks" del tipo array
 - Agregar un titulo en tag h4 "Lista de tareas"
 - Importar y agregar el componente "TaskList" al componente "TaskContainer"
+- Desde "TaskContainer" inyectar la variable del estado interno "tasks" en la prop "tasks" del componente "TaskList"
 
 ### 5. Crear componente "item de lista de Tarea"
 
