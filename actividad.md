@@ -55,7 +55,7 @@ Se utilizara el siguiente esquema de componentes:
 - Agregar un boton "eliminar" en el componente "TaskListItem"
 - Al presionar el boton "eliminar" solicitar confirmación
 - Al presionar el boton "eliminar" emitir un evento "delete-task" (kebab-case) enviando como parametro el id de la tarea 
-- Recibir el evento en "TaskList" y volver a emitir hacia "TaskContainer" (ver luego tema store)
+- Generar un eventHub para emit evento desde "TaskListItem" y recibir en "TaskContainer" 
 - Eliminar la tarea del state "tasks" dentro de "TaskContainer"
 
 ### 8. Agregarle estilos por css
