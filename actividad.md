@@ -53,7 +53,8 @@ Se utilizara el siguiente esquema de componentes:
 
 ### 7. Eliminar tarea
 - Agregar un boton "eliminar" en el componente "TaskListItem"
-- Emitir un evento "deleteTask" al presionar el boton "eliminar" enviando como parametro el id de la tarea 
+- Al presionar el boton "eliminar" solicitar confirmación
+- Al presionar el boton "eliminar" emitir un evento "delete-task" (kebab-case) enviando como parametro el id de la tarea 
 - Recibir el evento en "TaskList" y enviar hacia "TaskContainer"
 - Eliminar la tarea del state "tasks" dentro de "TaskContainer"
 

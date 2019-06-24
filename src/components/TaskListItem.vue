@@ -1,5 +1,5 @@
 <template>
-    <li>{{task}}</li>
+    <li><button @click="deleteTask">X</button> {{task}} </li>
 </template>
 
 <script>
@@ -8,6 +8,13 @@
         props: {
             task: String,
             id: Number
+        },
+        methods:{
+            deleteTask(){
+                if(confirm('Borrar tarea?')){
+                    this.$emit("delete-task", this.id)
+                }
+            }
         }
     }
 </script>
