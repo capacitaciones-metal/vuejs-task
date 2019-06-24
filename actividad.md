@@ -58,6 +58,6 @@ Se utilizara el siguiente esquema de componentes:
 - Generar un eventHub para emit evento desde "TaskListItem" y recibir en "TaskContainer" 
 - Eliminar la tarea del state "tasks" dentro de "TaskContainer"
 
-### 8. Agregarle estilos por css
+### 8. Agregar Store
+- remplazar el eventhub por un store de vuex
 
-- Cambiar el color de los botones
