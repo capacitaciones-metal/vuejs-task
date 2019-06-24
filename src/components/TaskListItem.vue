@@ -12,7 +12,7 @@
         methods:{
             deleteTask(){
                 if(confirm('Borrar tarea?')){
-                    this.$emit("delete-task", this.id)
+                    this.$bus.$emit("delete-task", this.id)
                 }
             }
         }

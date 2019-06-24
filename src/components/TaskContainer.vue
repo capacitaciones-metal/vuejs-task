@@ -2,7 +2,7 @@
     <div>
         <h3>Gestion de Tareas</h3>
         <task-new v-on:newTask="addTask"/>
-        <task-list :tasks="tasks" @delete-task-from-list="deleteTask"/>
+        <task-list :tasks="tasks" />
     </div>
 </template>
 
@@ -16,6 +16,9 @@
             return {
                 tasks: []
             }
+        },
+        created: function () {
+            this.$bus.$on('delete-task', this.deleteTask)
         },
         components: {
             TaskNew, TaskList
