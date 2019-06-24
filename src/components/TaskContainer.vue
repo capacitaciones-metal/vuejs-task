@@ -2,30 +2,32 @@
     <div>
         <h3>Gestion de Tareas</h3>
         <task-new v-on:newTask="addTask"/>
-        <task-list :tasks="tasks" @delete-task-from-list="deleteTask"/>
+        <task-list :tasks="getTasks"/>
     </div>
 </template>
 
 <script>
     import TaskNew from './TaskNew'
     import TaskList from './TaskList'
+    import {mapGetters} from 'vuex'
 
     export default {
         name: "TaskContainer",
-        data: function () {
-            return {
-                tasks: []
-            }
+        created: function () {
+            this.$bus.$on('delete-task', this.deleteTask)
+        },
+        computed: {
+            ...mapGetters(['getTasks'])
         },
         components: {
             TaskNew, TaskList
         },
         methods: {
             addTask: function (task) {
-                this.tasks.push(task)
+                this.$store.commit("addTask", task)
             },
             deleteTask: function (id) {
-                this.tasks.splice(id,1)
+                this.$store.commit("deleteTask", id)
             }
         }
     }
