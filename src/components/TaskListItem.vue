@@ -1,7 +1,7 @@
 <template>
 
-    <v-list-tile>
-        <v-list-tile-content>
+    <v-list-tile >
+        <v-list-tile-content class="pl-3">
             <v-list-tile-title> {{task}}</v-list-tile-title>
         </v-list-tile-content>
 

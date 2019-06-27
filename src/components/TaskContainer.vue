@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-layout row wrap>
-            <v-flex xs12 md6 offset-md3>
+            <v-flex xs12 md4 offset-md4>
                 <v-card>
                     <v-card-title>
                         <h3>Gestion de Tareas</h3>
