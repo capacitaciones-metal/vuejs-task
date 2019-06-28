@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
-    <task-container />
-  </div>
+  <v-app>
+    <v-content class="content">
+      <task-container />
+    </v-content>
+  </v-app>
 </template>
 
 <script>

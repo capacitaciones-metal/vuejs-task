@@ -1,9 +1,26 @@
 <template>
-    <div>
-        <h3>Gestion de Tareas</h3>
-        <task-new v-on:newTask="addTask"/>
-        <task-list :tasks="getTasks"/>
-    </div>
+    <v-container>
+        <v-layout row wrap>
+            <v-flex xs12 md4 offset-md4>
+                <v-card elevation="10">
+                    <v-card-title>
+                        <h3>Gestion de Tareas</h3>
+                    </v-card-title>
+
+                    <v-card-text>
+                        <task-new v-on:newTask="addTask"/>
+                    </v-card-text>
+
+                    <v-divider></v-divider>
+
+                    <v-card-text>
+                        <task-list :tasks="getTasks"/>
+                    </v-card-text>
+
+                </v-card>
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script>

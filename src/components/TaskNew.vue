@@ -1,8 +1,12 @@
 <template>
-    <div>
-        <input type="text" v-model="task"/>
-        <button v-on:click="add">Agregar</button>
-    </div>
+    <v-layout row wrap>
+        <v-flex xs12>
+            <v-text-field color="blue" label="Nueva Tarea" type="text" @keyup.enter="add" v-model="task"/>
+        </v-flex>
+        <v-flex xs12 class="text-xs-right">
+            <v-btn color="blue" dark v-on:click="add">Agregar</v-btn>
+        </v-flex>
+    </v-layout>
 </template>
 
 <script>
